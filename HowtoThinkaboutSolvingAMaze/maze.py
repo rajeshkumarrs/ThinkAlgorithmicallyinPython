@@ -1,3 +1,4 @@
+#string representation of the maze
 maze_str = """
     * * * * * * * * * * * * *
     *           *           *
@@ -14,7 +15,7 @@ maze_str = """
     *         *             *
     * * * * x * * * * * * * *
     """
-# print(maze_str)
+#Maze as 2D array
 maze_lst = [
     ["*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*"],
     ["*", " ", " ", " ", " ", " ", "*", " ", " ", " ", " ", " ", "*"],
@@ -32,7 +33,7 @@ maze_lst = [
     ["*", "*", "*", "*", "x", "*", "*", "*", "*", "*", "*", "*", "*"]
 ]
 
-
+#Print maze at any point in time during the journey from start to finish
 def print_maze():
     for row in range(len(maze_lst)):
         for i in range(len(maze_lst[row])):
